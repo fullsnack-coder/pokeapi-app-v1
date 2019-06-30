@@ -1,5 +1,8 @@
 .Form{
     padding: 30px;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
 }
 
 .Form__input{

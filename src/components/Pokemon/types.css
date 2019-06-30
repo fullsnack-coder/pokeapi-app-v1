@@ -1,0 +1,46 @@
+.Pokemon__type.fire{
+    background-color: #c42727;
+}
+.Pokemon__type.poison{
+    background-color: #7d3fa7;
+}
+.Pokemon__type.grass{
+    background-color: #2ba166;
+}
+.Pokemon__type.water{
+    background-color: #2c6fc7;
+}
+.Pokemon__type.electric{
+    background-color: #e0bb15;
+}
+.Pokemon__type.psychic{
+    background-color: #b63c9c;
+}
+.Pokemon__type.steel{
+    background-color: #949494;
+}
+.Pokemon__type.fighting{
+    background-color: #552020;
+}
+.Pokemon__type.ghost{
+    background-color: #34273a;
+}
+.Pokemon__type.fairy{
+    background-color: #d413a4;
+}
+.Pokemon__type.normal{
+    background-color: #d6d6d6;
+}
+.Pokemon__type.ground{
+    background-color: #998424;
+}
+.Pokemon__type.rock{
+    background-color: #352f2e;
+}
+.Pokemon__type.dragon{
+    background-color: #323eac;
+}
+.Pokemon__type.flying{
+    background-color: #816f5d;
+}
+

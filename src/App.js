@@ -40,7 +40,7 @@ class App extends React.Component{
           title="Who's that Pokémon?"
         />
         <Main setinfo={this.getInfoPokemon} info={infoPkmn}
-          subtitle="Search the first Pokémon generation by Pokedex's Name"
+          subtitle="Search the Pokémon info by Pokedex's Name"
         />
         <Footer/>
       </div>

@@ -21,6 +21,35 @@
     background-color: var(--color-white);
 }
 
+.Pokemon__atributtes{
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.Pokemon__atributte{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.Type__group{
+    display: flex;
+    align-items: center;
+}
+
+.Pokemon__type{
+    padding: 6px 12px;
+    border-radius: 30px;
+}
+
+.Ability-group{
+    display: flex;
+}
+
+.Pokemon__ability{
+    display: block;
+}
 
 @media screen and (min-width: 700px){
     .Pokemon{

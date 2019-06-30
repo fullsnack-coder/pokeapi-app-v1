@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './types.css';
 import './Pokemon.css';
 
 export default class Pokemon extends Component{
@@ -12,7 +13,7 @@ export default class Pokemon extends Component{
 
         console.log(info)
         const type = info.pktypes[0].type.name;
-        const abilities = info.pkabilities[0].ability.name;
+        const abilities = info.pkabilities;
         
         return(
             <div className='Pokemon'>
@@ -23,8 +24,23 @@ export default class Pokemon extends Component{
                     <ul className='Pokemon__atributtes'>
                         <li className='Pokemon__atributte'>Id = {info.pkid}</li>
                         <li className='Pokemon__atributte'>Name = {info.pkname}</li>
-                        <li className='Pokemon__atributte'>Type = {type}</li>
-                        <li className='Pokemon__atributte'>Abilities = {abilities}</li>
+                        <div className='Type__group'>
+                            <li className='Pokemon__atributte'>Type = </li>
+                            <div className={'Pokemon__type '+type}>
+                                {type}
+                            </div>
+                        </div>
+                        <div className='Ability-group'>
+                            <li className='Pokemon__atributte'>Abilities = </li>
+                            <li className='Pkmn__ability-group'>{
+                                    Object.keys(abilities).map( key =>{
+                                        return(
+                                            <span className='Pokemon__ability' key={key}>{abilities[key].ability.name}</span>
+                                        )
+                                    })
+                                }
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
