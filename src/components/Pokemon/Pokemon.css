@@ -1,0 +1,29 @@
+.Pokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out .3s;
+}
+
+.Pokemon__img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: solid 2px var(--color-black);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.Pokemon__img img{
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 700px){
+    .Pokemon{
+        flex-direction: row;
+
+    }
+}

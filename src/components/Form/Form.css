@@ -1,0 +1,33 @@
+.Form{
+    padding: 30px;
+}
+
+.Form__input{
+    border: solid 2px blue;
+    background-color: var(--color-white);
+    transition: all ease-in .3s;
+    padding: 12px 6px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    transition: all ease-in-out .3s;
+}
+
+.Form__input:active{
+    transform: scale(1.03);
+}
+
+.Form__btn-container{
+    width: 100%;
+}
+
+@media screen and (min-width: 700px){
+    .Form{
+        display: flex;
+    }
+    .Form__input{
+        margin-right: 20px;
+    }
+}

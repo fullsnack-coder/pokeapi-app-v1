@@ -1,0 +1,19 @@
+.btn-send{
+    padding: 12px 70px;
+    border: solid 1px transparent;
+    background-color: var(--color-white);
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--color-text-gray);
+    font-size: 18px;
+    border-radius: 25px;
+    width: 293px;
+    margin: 0 auto;
+    display: block;
+    transition: all ease-in-out .3s;
+}
+
+.btn-send:active{
+    transform: scale(1.05);
+}
+
