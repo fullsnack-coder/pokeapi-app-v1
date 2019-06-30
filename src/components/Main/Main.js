@@ -9,7 +9,10 @@ export default class Main extends React.Component{
         return(
             <main className='Main'>
                 <h3 className='Main__subtitle'>{this.props.subtitle}</h3>
-                <Form/>
+                <Form
+                    setinfo={this.props.setinfo}
+                />
+                <Pokemon info={this.props.info}/>
             </main>
         )
     }

@@ -6,22 +6,26 @@ class Form extends Component{
 
     pokemonRef = React.createRef();
 
+    handler = (e) =>{
 
-    handler(e){
+        const pokemon = this.pokemonRef.current.value.toLowerCase();
+
         e.preventDefault();
-        window.fetch(`https://pokeapi.co/api/v2/pokemon/`)
+        window.fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
             .then( response =>{
-                return response.json()
+                if(response.status === 200) return response.json();
+                else if(response.status === 404) return 'error';
             })
-            .then( response =>{
-                console.log(response)
+            .then( responseJSON =>{
+                if(responseJSON === 'error') return null;
+                else this.props.setinfo(responseJSON);
             })
     }
 
 
     render(){
         return(
-            <form className='Form' onSubmit={this.handler.bind(this)}>
+            <form className='Form' onSubmit={this.handler}>
                 <input
                     className='Form__input'
                     placeholder='Enter the Pokemon name...'
