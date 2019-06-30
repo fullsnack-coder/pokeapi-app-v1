@@ -1,0 +1,14 @@
+.Footer{
+    color: var(--color-white);
+    text-align: center;
+}
+
+.Footer__text{
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+}
+
+.Footer__author{
+    font-size: 16px;
+}

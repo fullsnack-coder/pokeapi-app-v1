@@ -1,0 +1,12 @@
+.Main{
+    margin-bottom: 50px;
+    transition: all ease-in .3s;
+}
+
+.Main__subtitle{
+    display: inline-block;
+    width: 100%;    
+    text-align: center;
+    color: var(--color-white);
+    font-size: 16px;
+}
