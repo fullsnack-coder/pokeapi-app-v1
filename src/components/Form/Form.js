@@ -33,7 +33,7 @@ class Form extends Component{
                     />
                 <div className='Form__button-container'>
                    <Button
-                       btntext='SEARCH'
+                       btntext='search'
                    />
                 </div>
             </form>
